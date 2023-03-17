@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        //Verify navigation functionality on Watch
+        //Doesn't work in preview on XCode...
+        NavigationView{
+            List{
+                NavigationLink(destination: CompanionAppDemoView()){
+                    CompanionAppRow()
+                }
+            }
         }
-        .padding()
     }
 }
 
