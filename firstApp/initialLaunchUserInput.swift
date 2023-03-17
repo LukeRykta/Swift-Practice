@@ -10,7 +10,7 @@ import Contacts
 
 struct initialLaunchUserInput: View {
     
-    @State private var firstTimeUser = false
+    @AppStorage("firstTimeUser") var firstTimeUser = false
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var emailAddress = ""
@@ -40,13 +40,10 @@ struct initialLaunchUserInput: View {
                                 Image(systemName: "keyboard.chevron.compact.down")
                             }
                             Button("Save", action: saveDefaultUser)
-                            
-                        }
+                            }
                         }
                         //1. come back to fix button!
-                        
                     }
-                    
                 }
                 RadialGradient(
                     gradient: Gradient(colors: [Color.purple, Color.indigo]),

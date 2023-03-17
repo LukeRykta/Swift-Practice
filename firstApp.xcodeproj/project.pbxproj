@@ -23,6 +23,7 @@
 		5E97FA8529BFD518004C6565 /* firstApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA8429BFD518004C6565 /* firstApp_Watch_AppUITests.swift */; };
 		5E97FA8729BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA8629BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
+		B5FA9A8729C427D2002C05BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8629C427D2002C05BE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		5E97FA8629BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B5FA9A8629C427D2002C05BE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				5E97FA4329BFD515004C6565 /* ContentView.swift */,
 				5E97FA4529BFD517004C6565 /* Assets.xcassets */,
 				5E97FA4729BFD517004C6565 /* Preview Content */,
+				B5FA9A8629C427D2002C05BE /* Model.swift */,
 			);
 			path = firstApp;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */,
+				B5FA9A8729C427D2002C05BE /* Model.swift in Sources */,
 				B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */,
 				5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */,
 			);
