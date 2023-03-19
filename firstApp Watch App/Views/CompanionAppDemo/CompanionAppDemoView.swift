@@ -15,10 +15,12 @@ struct CompanionAppDemoView: View {
     @State var messageText = ""
     
     var body: some View {
-        Button("Send Message to Phone", action: sendmessage)
+        VStack{
+            Text(messageText)
+            Button("Send Timestamp to Phone", action: sendmessage)
+            
+        }
     }
-    //Sends a message to the phone, its just a timestamp for now.
-    //Could send dictionaries of info.
     func sendmessage() {
         self.messageText = dateFormatter.string(from: Date())
         self.model.session.sendMessage(["message": self.messageText], replyHandler: nil){

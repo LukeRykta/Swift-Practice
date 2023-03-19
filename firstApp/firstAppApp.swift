@@ -13,7 +13,9 @@ struct firstAppApp: App {
         WindowGroup {
             //ContentView()
            // NewView()
-            initialLaunchUserInput()
+            //initialLaunchUserInput()
+            WatchConnectivityDemoIOS()
+            
         }
     }
 }
