@@ -7,6 +7,7 @@
 
 import SwiftUI
 import WatchConnectivity
+import Foundation
 
 struct CompanionAppDemoView: View {
     var model = WatchSession()
@@ -22,12 +23,13 @@ struct CompanionAppDemoView: View {
         }
     }
     func sendmessage() {
-        self.messageText = dateFormatter.string(from: Date())
+        self.messageText = String(DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .long))
         self.model.session.sendMessage(["message": self.messageText], replyHandler: nil){
             (error) in
             print(error.localizedDescription)
         }
         print("Sent a message! :)")
+        print(self.messageText)
     }
 }
 
