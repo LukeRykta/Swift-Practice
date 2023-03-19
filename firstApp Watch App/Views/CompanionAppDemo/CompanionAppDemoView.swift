@@ -9,12 +9,22 @@ import SwiftUI
 import WatchConnectivity
 
 struct CompanionAppDemoView: View {
+    var model = WatchSession()
+    let dateFormatter = DateFormatter()
+    
+    @State var messageText = ""
     
     var body: some View {
         Button("Send Message to Phone", action: sendmessage)
     }
+    //Sends a message to the phone, its just a timestamp for now.
+    //Could send dictionaries of info.
     func sendmessage() {
-        //Current placeholder for the WCSession
+        self.messageText = dateFormatter.string(from: Date())
+        self.model.session.sendMessage(["message": self.messageText], replyHandler: nil){
+            (error) in
+            print(error.localizedDescription)
+        }
         print("Sent a message! :)")
     }
 }

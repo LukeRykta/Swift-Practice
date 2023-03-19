@@ -9,7 +9,7 @@ import Foundation
 import WatchConnectivity
 
 
-class ViewWatchSession : NSObject, WCSessionDelegate{
+class WatchSession : NSObject, WCSessionDelegate{
     var session: WCSession
     
     init(session: WCSession = .default) {
