@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //Verify navigation functionality on Watch
-        //Doesn't work in preview on XCode...
         NavigationView{
             List{
                 NavigationLink(destination: CompanionAppDemoView()){

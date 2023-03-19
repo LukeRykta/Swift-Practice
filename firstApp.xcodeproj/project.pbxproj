@@ -23,6 +23,9 @@
 		5E97FA8529BFD518004C6565 /* firstApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA8429BFD518004C6565 /* firstApp_Watch_AppUITests.swift */; };
 		5E97FA8729BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA8629BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift */; };
 		751411E429C4FDA7004C5E97 /* CompanionAppDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751411E329C4FDA7004C5E97 /* CompanionAppDemoView.swift */; };
+		7569B1D129C7680E00A6F7D1 /* WatchConnectivityforWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D029C7680E00A6F7D1 /* WatchConnectivityforWatch.swift */; };
+		7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D229C7699C00A6F7D1 /* WatchConnectivityforIOS.swift */; };
+		7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */; };
 		7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +104,9 @@
 		5E97FA8429BFD518004C6565 /* firstApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		5E97FA8629BFD518004C6565 /* firstApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		751411E329C4FDA7004C5E97 /* CompanionAppDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionAppDemoView.swift; sourceTree = "<group>"; };
+		7569B1D029C7680E00A6F7D1 /* WatchConnectivityforWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityforWatch.swift; sourceTree = "<group>"; };
+		7569B1D229C7699C00A6F7D1 /* WatchConnectivityforIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityforIOS.swift; sourceTree = "<group>"; };
+		7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityDemoIOS.swift; sourceTree = "<group>"; };
 		7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionAppRow.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -185,6 +191,8 @@
 				B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */,
 				5E97FA4129BFD515004C6565 /* firstAppApp.swift */,
 				5E97FA4329BFD515004C6565 /* ContentView.swift */,
+				7569B1D229C7699C00A6F7D1 /* WatchConnectivityforIOS.swift */,
+				7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */,
 				5E97FA4529BFD517004C6565 /* Assets.xcassets */,
 				5E97FA4729BFD517004C6565 /* Preview Content */,
 			);
@@ -265,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				751411E329C4FDA7004C5E97 /* CompanionAppDemoView.swift */,
+				7569B1D029C7680E00A6F7D1 /* WatchConnectivityforWatch.swift */,
 				7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */,
 			);
 			path = CompanionAppDemo;
@@ -492,8 +501,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */,
 				5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */,
 				B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */,
+				7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */,
 				5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E97FA6C29BFD517004C6565 /* ContentView.swift in Sources */,
+				7569B1D129C7680E00A6F7D1 /* WatchConnectivityforWatch.swift in Sources */,
 				7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */,
 				5E97FA6A29BFD517004C6565 /* firstAppApp.swift in Sources */,
 				751411E429C4FDA7004C5E97 /* CompanionAppDemoView.swift in Sources */,
