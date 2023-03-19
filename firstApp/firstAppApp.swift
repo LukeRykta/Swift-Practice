@@ -12,8 +12,10 @@ struct firstAppApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-           // NewView()
+            //NewView()
             initialLaunchUserInput()
+            //WatchConnectivityDemoIOS()
+            
         }
     }
 }
