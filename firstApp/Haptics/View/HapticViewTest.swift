@@ -14,13 +14,19 @@ struct HapticViewTest: View {
                 Button ("Success Haptic!") {
                     haptic(.success)
                 }
-                .padding(.bottom)
-                
+                .padding(.bottom, 20)
             }
             HStack {
-                Button ("Failure Haptic!"){
+                Button ("Error Haptic!"){
                     haptic(.error)
                 }
+                .padding(.bottom, 20)
+            }
+            HStack {
+                Button ("Warning Haptic!"){
+                    haptic(.warning)
+                }
+                .padding(.bottom, 20)
             }
         }
     }
