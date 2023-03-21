@@ -17,17 +17,17 @@ struct ContentView: View {
                         .imageScale(.large)
                         .foregroundColor(.accentColor)
                     Text("Welcome to the Home Page")
+                        
                 }
                 
                 NavigationLink(destination: WatchConnectivityDemoIOS()){
                     HStack{
                         Image(systemName: "mail.stack")
-                        Text("Message to Phone")
+                        Text("Message from Watch")
                     }
-                    
                 }
             }
-            
+            .navigationTitle("Home Page")
         }
     }
 }

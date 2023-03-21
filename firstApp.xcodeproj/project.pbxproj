@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E4E503129C9413C0088E5F6 /* BluetoothConnectivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */; };
 		5E4E503329C942E30088E5F6 /* BluetoothRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E503229C942E30088E5F6 /* BluetoothRow.swift */; };
+		5E4E503729C94A250088E5F6 /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E503629C94A250088E5F6 /* TransferService.swift */; };
 		5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA4129BFD515004C6565 /* firstAppApp.swift */; };
 		5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA4329BFD515004C6565 /* ContentView.swift */; };
 		5E97FA4629BFD517004C6565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E97FA4529BFD517004C6565 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 /* Begin PBXFileReference section */
 		5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnectivityView.swift; sourceTree = "<group>"; };
 		5E4E503229C942E30088E5F6 /* BluetoothRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothRow.swift; sourceTree = "<group>"; };
+		5E4E503629C94A250088E5F6 /* TransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 		5E97FA3E29BFD515004C6565 /* firstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97FA4129BFD515004C6565 /* firstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAppApp.swift; sourceTree = "<group>"; };
 		5E97FA4329BFD515004C6565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */,
 				5E4E503229C942E30088E5F6 /* BluetoothRow.swift */,
+				5E4E503629C94A250088E5F6 /* TransferService.swift */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				5E4E503329C942E30088E5F6 /* BluetoothRow.swift in Sources */,
 				7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */,
 				5E97FA6A29BFD517004C6565 /* firstAppApp.swift in Sources */,
+				5E4E503729C94A250088E5F6 /* TransferService.swift in Sources */,
 				751411E429C4FDA7004C5E97 /* CompanionAppDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
