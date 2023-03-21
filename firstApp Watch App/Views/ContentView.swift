@@ -14,6 +14,9 @@ struct ContentView: View {
                 NavigationLink(destination: CompanionAppDemoView()){
                     CompanionAppRow()
                 }
+                NavigationLink(destination: BluetoothConnectivityView()){
+                    BluetoothRow()
+                }
             }
         }
     }
