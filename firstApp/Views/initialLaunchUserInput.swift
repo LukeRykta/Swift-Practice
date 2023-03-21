@@ -23,7 +23,6 @@ struct initialLaunchUserInput: View {
             ContentView()
         }else{
             NavigationStack(){
-                ZStack{
                     VStack{
                         Form {
                             TextField("First Name: ", text: $firstName)
@@ -34,27 +33,19 @@ struct initialLaunchUserInput: View {
                         //".action", move view to contentView()
                         .navigationTitle("User Details")
                         .toolbar{ToolbarItemGroup(placement: .navigationBarTrailing){
-                            Button{
-                                hideKeyboard()
-                            }label: {
-                                Image(systemName: "keyboard.chevron.compact.down")
-                            }
+                                Button{
+                                    hideKeyboard()
+                                }label: {
+                                    Image(systemName: "keyboard.chevron.compact.down")
+                                }
                             Button("Save", action: saveDefaultUser)
                             
-                        }
+                            }
                         }
                         //1. come back to fix button!
-                        
-                    }
                     
+                    }
                 }
-                RadialGradient(
-                    gradient: Gradient(colors: [Color.purple, Color.indigo]),
-                    center: .center,
-                    startRadius: UIScreen.main.bounds.height,
-                    endRadius: UIScreen.main.bounds.height)
-                .ignoresSafeArea()
-            }
         }
     }
     

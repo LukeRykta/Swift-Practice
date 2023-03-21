@@ -13,8 +13,9 @@ struct firstAppApp: App {
         WindowGroup {
             //ContentView()
             //NewView()
-            //initialLaunchUserInput()
-            HapticViewTest()
+            initialLaunchUserInput()
+            //WatchConnectivityDemoIOS()
+            
         }
     }
 }
