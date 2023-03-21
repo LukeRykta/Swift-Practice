@@ -26,6 +26,13 @@ struct ContentView: View {
                     }
                     
                 }
+                NavigationLink(destination: HapticView()){
+                    HStack{
+                        Image(systemName: "bolt.fill")
+                        Text("Haptic Buttons")
+                    }
+                    
+                }
             }
             
         }
