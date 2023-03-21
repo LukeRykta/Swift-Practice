@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E4E503129C9413C0088E5F6 /* BluetoothConnectivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */; };
 		5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA4129BFD515004C6565 /* firstAppApp.swift */; };
 		5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97FA4329BFD515004C6565 /* ContentView.swift */; };
 		5E97FA4629BFD517004C6565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E97FA4529BFD517004C6565 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnectivityView.swift; sourceTree = "<group>"; };
 		5E97FA3E29BFD515004C6565 /* firstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97FA4129BFD515004C6565 /* firstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAppApp.swift; sourceTree = "<group>"; };
 		5E97FA4329BFD515004C6565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E4E502F29C941260088E5F6 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 		5E97FA3529BFD515004C6565 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +289,7 @@
 		751411E229C4FD78004C5E97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5E4E502F29C941260088E5F6 /* Bluetooth */,
 				5E97FA6B29BFD517004C6565 /* ContentView.swift */,
 				7585E4BA29C5005F003ED899 /* CompanionAppDemo */,
 			);
@@ -546,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4E503129C9413C0088E5F6 /* BluetoothConnectivityView.swift in Sources */,
 				5E97FA6C29BFD517004C6565 /* ContentView.swift in Sources */,
 				7569B1D129C7680E00A6F7D1 /* WatchConnectivityforWatch.swift in Sources */,
 				7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */,
