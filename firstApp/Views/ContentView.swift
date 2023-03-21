@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image(systemName: "globe")
                         .imageScale(.large)
                         .foregroundColor(.accentColor)
-                    Text("Welcome to the Home Page2")
+                    Text("Welcome to the Home Page3")
                 }
                 
                 NavigationLink(destination: WatchConnectivityDemoIOS()){
