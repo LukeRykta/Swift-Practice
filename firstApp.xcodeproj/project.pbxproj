@@ -29,6 +29,8 @@
 		7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D229C7699C00A6F7D1 /* WatchConnectivityforIOS.swift */; };
 		7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */; };
 		7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */; };
+		7589F39729CA88630059CC77 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39629CA88630059CC77 /* HapticManager.swift */; };
+		7589F39929CA88750059CC77 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39829CA88750059CC77 /* HapticView.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		7569B1D229C7699C00A6F7D1 /* WatchConnectivityforIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityforIOS.swift; sourceTree = "<group>"; };
 		7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityDemoIOS.swift; sourceTree = "<group>"; };
 		7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionAppRow.swift; sourceTree = "<group>"; };
+		7589F39629CA88630059CC77 /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		7589F39829CA88750059CC77 /* HapticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				5E97FA4129BFD515004C6565 /* firstAppApp.swift */,
+				7589F39529CA88630059CC77 /* Haptic */,
 				B5FA9A8329C1A3D0002C05BE /* Info.plist */,
 				75086A7029C7886100531E34 /* Views */,
 				5E97FA4529BFD517004C6565 /* Assets.xcassets */,
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */,
+				7589F39829CA88750059CC77 /* HapticView.swift */,
 				5E97FA4329BFD515004C6565 /* ContentView.swift */,
 				7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */,
 				75086A7129C7888500531E34 /* Functions */,
@@ -307,6 +313,14 @@
 				7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */,
 			);
 			path = CompanionAppDemo;
+			sourceTree = "<group>";
+		};
+		7589F39529CA88630059CC77 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				7589F39629CA88630059CC77 /* HapticManager.swift */,
+			);
+			path = Haptic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,10 +545,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7589F39929CA88750059CC77 /* HapticView.swift in Sources */,
 				7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */,
 				5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */,
 				B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */,
 				7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */,
+				7589F39729CA88630059CC77 /* HapticManager.swift in Sources */,
 				5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
