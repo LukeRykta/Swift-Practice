@@ -22,7 +22,7 @@ struct ContentView: View {
                 NavigationLink(destination: WatchConnectivityDemoIOS()){
                     HStack{
                         Image(systemName: "mail.stack")
-                        Text("Message to Phone")
+                        Text("Receive Message from a paired Watch via WatchConnectivity")
                     }
                     
                 }
@@ -30,6 +30,13 @@ struct ContentView: View {
                     HStack{
                         Image(systemName: "bolt.fill")
                         Text("Haptic Buttons")
+                    }
+                    
+                }
+                NavigationLink(destination: BluetoothViewiOS()){
+                    HStack{
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Send a message to a Watch via Bluetooth")
                     }
                     
                 }

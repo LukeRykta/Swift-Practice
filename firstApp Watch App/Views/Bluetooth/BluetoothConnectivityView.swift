@@ -10,6 +10,7 @@ import SwiftUI
 struct BluetoothConnectivityView: View {
     
     @ObservedObject private var model = BluetoothCentralModel()
+    
     var body: some View {
             HStack{
                 Text(model.messageText)

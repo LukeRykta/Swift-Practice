@@ -4,7 +4,7 @@ import os
 
 class BluetoothPeripheralModel: NSObject, ObservableObject {
     
-    @Published var messageText: String = "Send a message, please"
+    @Published var messageText: String = "This is a message sent from a phone via Bluetooth"
 	
 	var peripheralManager: CBPeripheralManager!
 	
