@@ -1,4 +1,4 @@
-import SwiftUI
+import Foundation
 import CoreBluetooth
 import os
 
@@ -10,12 +10,13 @@ class BluetoothPeripheralModel: NSObject, ObservableObject {
 	
 	var transferCharacteristic: CBMutableCharacteristic?
 	var connectedCentral: CBCentral?
+    var delegate: CBPeripheralManagerDelegate?
 	var dataToSend = Data()
 	var sendDataIndex: Int = 0
 	
 	override init(){
 		super.init()
-		self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: [CBPeripheralManagerOptionShowPowerAlertKey: true])
+		self.peripheralManager = CBPeripheralManager(delegate: delegate, queue: nil)
 	}
 	
 	    /*
@@ -174,7 +175,7 @@ extension BluetoothPeripheralModel: CBPeripheralManagerDelegate {
         os_log("Central subscribed to characteristic")
         
         // Get the data
-        dataToSend =
+        dataToSend = messageText.data(using: .utf8)!
         
         // Reset the index
         sendDataIndex = 0
@@ -214,7 +215,7 @@ extension BluetoothPeripheralModel: CBPeripheralManagerDelegate {
             }
             
             os_log("Received write request of %d bytes: %s", requestValue.count, stringFromData)
-            self.textView.text = stringFromData
+            self.messageText = stringFromData
         }
     }
 }

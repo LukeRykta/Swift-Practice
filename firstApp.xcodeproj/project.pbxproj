@@ -33,7 +33,8 @@
 		7589F39929CA88750059CC77 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39829CA88750059CC77 /* HapticView.swift */; };
 		7589F39F29CA8A2A0059CC77 /* BluetoothCentralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */; };
 		7589F3A129CA8A3D0059CC77 /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F3A029CA8A3D0059CC77 /* TransferService.swift */; };
-		7589F3A329CA8EF50059CC77 /* BluetoothPeripheralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F3A229CA8EF50059CC77 /* BluetoothPeripheralModel.swift */; };
+		759CC7D129CB669F00FE6F4B /* BluetoothPeripheralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F3A229CA8EF50059CC77 /* BluetoothPeripheralModel.swift */; };
+		759CC7D429CB681D00FE6F4B /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CC7D329CB681D00FE6F4B /* TransferService.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCentralModel.swift; sourceTree = "<group>"; };
 		7589F3A029CA8A3D0059CC77 /* TransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 		7589F3A229CA8EF50059CC77 /* BluetoothPeripheralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheralModel.swift; sourceTree = "<group>"; };
+		759CC7D329CB681D00FE6F4B /* TransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,7 +179,6 @@
 			children = (
 				5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */,
 				7589F3A029CA8A3D0059CC77 /* TransferService.swift */,
-				7589F3A229CA8EF50059CC77 /* BluetoothPeripheralModel.swift */,
 				7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */,
 				5E4E503229C942E30088E5F6 /* BluetoothRow.swift */,
 			);
@@ -290,6 +291,7 @@
 				B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */,
 				7589F39829CA88750059CC77 /* HapticView.swift */,
 				5E97FA4329BFD515004C6565 /* ContentView.swift */,
+				759CC7D229CB66BD00FE6F4B /* Bluetooth */,
 				7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */,
 				75086A7129C7888500531E34 /* Functions */,
 			);
@@ -330,6 +332,15 @@
 				7589F39629CA88630059CC77 /* HapticManager.swift */,
 			);
 			path = Haptic;
+			sourceTree = "<group>";
+		};
+		759CC7D229CB66BD00FE6F4B /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				759CC7D329CB681D00FE6F4B /* TransferService.swift */,
+				7589F3A229CA8EF50059CC77 /* BluetoothPeripheralModel.swift */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,7 +569,9 @@
 				7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */,
 				5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */,
 				B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */,
+				759CC7D129CB669F00FE6F4B /* BluetoothPeripheralModel.swift in Sources */,
 				7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */,
+				759CC7D429CB681D00FE6F4B /* TransferService.swift in Sources */,
 				7589F39729CA88630059CC77 /* HapticManager.swift in Sources */,
 				5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */,
 			);
@@ -585,7 +598,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7589F3A329CA8EF50059CC77 /* BluetoothPeripheralModel.swift in Sources */,
 				5E4E503129C9413C0088E5F6 /* BluetoothConnectivityView.swift in Sources */,
 				5E97FA6C29BFD517004C6565 /* ContentView.swift in Sources */,
 				7569B1D129C7680E00A6F7D1 /* WatchConnectivityforWatch.swift in Sources */,

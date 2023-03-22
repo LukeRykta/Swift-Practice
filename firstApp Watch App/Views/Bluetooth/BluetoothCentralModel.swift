@@ -1,4 +1,4 @@
-import SwiftUI
+import Foundation
 import CoreBluetooth
 import os
 
