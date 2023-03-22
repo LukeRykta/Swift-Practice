@@ -18,13 +18,12 @@ class BluetoothPeripheralModel: NSObject, ObservableObject {
 		super.init()
 		self.peripheralManager = CBPeripheralManager(delegate: delegate, queue: nil)
 	}
-	
 	    /*
      *  Sends the next amount of data to the connected central
      */
     static var sendingEOM = false
     
-    private func sendData() {
+    func sendData() {
 		
 		guard let transferCharacteristic = transferCharacteristic else {
 			return
