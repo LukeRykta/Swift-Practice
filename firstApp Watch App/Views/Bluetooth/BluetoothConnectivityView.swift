@@ -8,26 +8,12 @@
 import SwiftUI
 
 struct BluetoothConnectivityView: View {
-    var model = WatchSession()
-    let dateFormatter = DateFormatter()
     
-    @State var messageText = ""
-    
+    @ObservedObject private var model = BluetoothCentralModel()
     var body: some View {
-        VStack {
-            VStack{
-                Text(messageText)
-                Button("Transfer Data to Nearby Watch", action: SendData)
-//                Button("Transfer Data to Nearby Watch", action: SendData)
+            HStack{
+                Text(model.messageText)
             }
-            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
-                Text("Start Broadcast")
-            }
-            .padding()
-        }
-    }
-    func SendData() {
-        print("hello bluetooth")
     }
 }
 

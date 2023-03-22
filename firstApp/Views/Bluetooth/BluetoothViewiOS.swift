@@ -1,6 +1,5 @@
 import SwiftUI
 import CoreBluetooth
-import os
 
 struct BluetoothViewiOS: View {
     
