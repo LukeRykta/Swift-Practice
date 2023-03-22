@@ -31,6 +31,8 @@
 		7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */; };
 		7589F39729CA88630059CC77 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39629CA88630059CC77 /* HapticManager.swift */; };
 		7589F39929CA88750059CC77 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39829CA88750059CC77 /* HapticView.swift */; };
+		7589F39F29CA8A2A0059CC77 /* BluetoothCentralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */; };
+		7589F3A129CA8A3D0059CC77 /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589F3A029CA8A3D0059CC77 /* TransferService.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,8 @@
 		7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionAppRow.swift; sourceTree = "<group>"; };
 		7589F39629CA88630059CC77 /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		7589F39829CA88750059CC77 /* HapticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
+		7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCentralModel.swift; sourceTree = "<group>"; };
+		7589F3A029CA8A3D0059CC77 /* TransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				5E4E503029C9413C0088E5F6 /* BluetoothConnectivityView.swift */,
+				7589F3A029CA8A3D0059CC77 /* TransferService.swift */,
+				7589F39E29CA8A2A0059CC77 /* BluetoothCentralModel.swift */,
 				5E4E503229C942E30088E5F6 /* BluetoothRow.swift */,
 			);
 			path = Bluetooth;
@@ -582,6 +588,8 @@
 				5E4E503329C942E30088E5F6 /* BluetoothRow.swift in Sources */,
 				7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */,
 				5E97FA6A29BFD517004C6565 /* firstAppApp.swift in Sources */,
+				7589F3A129CA8A3D0059CC77 /* TransferService.swift in Sources */,
+				7589F39F29CA8A2A0059CC77 /* BluetoothCentralModel.swift in Sources */,
 				751411E429C4FDA7004C5E97 /* CompanionAppDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
