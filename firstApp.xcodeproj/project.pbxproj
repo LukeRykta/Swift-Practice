@@ -30,6 +30,9 @@
 		7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */; };
 		7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */; };
 		B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */; };
+		CA00070829CA879200471685 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00070729CA879200471685 /* HapticManager.swift */; };
+		CA00070A29CA87AA00471685 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00070929CA87AA00471685 /* HapticView.swift */; };
+		CA00070D29CA9B1700471685 /* HapticManagerWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00070C29CA9B1700471685 /* HapticManagerWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,9 @@
 		7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionAppRow.swift; sourceTree = "<group>"; };
 		B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialLaunchUserInput.swift; sourceTree = "<group>"; };
 		B5FA9A8329C1A3D0002C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA00070729CA879200471685 /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		CA00070929CA87AA00471685 /* HapticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
+		CA00070C29CA9B1700471685 /* HapticManagerWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManagerWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +243,7 @@
 		5E97FA6829BFD517004C6565 /* firstApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA00070B29CA9AAF00471685 /* WatchHaptic */,
 				5E97FA6929BFD517004C6565 /* firstAppApp.swift */,
 				751411E229C4FD78004C5E97 /* Views */,
 				5E97FA6D29BFD517004C6565 /* Assets.xcassets */,
@@ -275,6 +282,8 @@
 			children = (
 				B5FA9A8129C14F1F002C05BE /* initialLaunchUserInput.swift */,
 				5E97FA4329BFD515004C6565 /* ContentView.swift */,
+				CA00070929CA87AA00471685 /* HapticView.swift */,
+				CA00070629CA879200471685 /* Haptic */,
 				7569B1D429C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift */,
 				75086A7129C7888500531E34 /* Functions */,
 			);
@@ -307,6 +316,23 @@
 				7585E4BB29C5069C003ED899 /* CompanionAppRow.swift */,
 			);
 			path = CompanionAppDemo;
+			sourceTree = "<group>";
+		};
+		CA00070629CA879200471685 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				CA00070729CA879200471685 /* HapticManager.swift */,
+			);
+			name = Haptic;
+			path = firstApp/Haptic;
+			sourceTree = SOURCE_ROOT;
+		};
+		CA00070B29CA9AAF00471685 /* WatchHaptic */ = {
+			isa = PBXGroup;
+			children = (
+				CA00070C29CA9B1700471685 /* HapticManagerWatch.swift */,
+			);
+			path = WatchHaptic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,10 +557,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA00070A29CA87AA00471685 /* HapticView.swift in Sources */,
 				7569B1D329C7699C00A6F7D1 /* WatchConnectivityforIOS.swift in Sources */,
 				5E97FA4429BFD515004C6565 /* ContentView.swift in Sources */,
 				B5FA9A8229C14F1F002C05BE /* initialLaunchUserInput.swift in Sources */,
 				7569B1D529C76BF700A6F7D1 /* WatchConnectivityDemoIOS.swift in Sources */,
+				CA00070829CA879200471685 /* HapticManager.swift in Sources */,
 				5E97FA4229BFD515004C6565 /* firstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +594,7 @@
 				5E4E503329C942E30088E5F6 /* BluetoothRow.swift in Sources */,
 				7585E4BC29C5069C003ED899 /* CompanionAppRow.swift in Sources */,
 				5E97FA6A29BFD517004C6565 /* firstAppApp.swift in Sources */,
+				CA00070D29CA9B1700471685 /* HapticManagerWatch.swift in Sources */,
 				751411E429C4FDA7004C5E97 /* CompanionAppDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +764,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firstApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = firstApp;
@@ -747,7 +776,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rowdy23.firstApp.watchkitapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = rowdy23.firstApp.watchkitapp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -766,7 +795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firstApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = firstApp;
@@ -778,7 +807,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rowdy23.firstApp.watchkitapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = rowdy23.firstApp.watchkitapp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -799,7 +828,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firstApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = firstApp/Info.plist;
@@ -833,7 +862,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firstApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = firstApp/Info.plist;
@@ -866,7 +895,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -887,7 +916,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -908,7 +937,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -928,7 +957,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -950,7 +979,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rowdy23.firstApp-Watch-AppTests";
@@ -971,7 +1000,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rowdy23.firstApp-Watch-AppTests";
@@ -992,7 +1021,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rowdy23.firstApp-Watch-AppUITests";
@@ -1012,7 +1041,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GPM74XSJN5;
+				DEVELOPMENT_TEAM = WK88YQ45B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rowdy23.firstApp-Watch-AppUITests";

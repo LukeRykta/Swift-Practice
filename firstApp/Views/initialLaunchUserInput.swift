@@ -9,7 +9,6 @@ import SwiftUI
 import Contacts
 
 struct initialLaunchUserInput: View {
-    
     @State private var firstTimeUser = false
     @State private var firstName = ""
     @State private var lastName = ""
@@ -33,17 +32,22 @@ struct initialLaunchUserInput: View {
                         //".action", move view to contentView()
                         .navigationTitle("User Details")
                         .toolbar{ToolbarItemGroup(placement: .navigationBarTrailing){
-                                Button{
+                                Button {
                                     hideKeyboard()
+                                    impact(.soft)
                                 }label: {
                                     Image(systemName: "keyboard.chevron.compact.down")
                                 }
-                            Button("Save", action: saveDefaultUser)
+                            
+                                Button("Save") {
+                                    saveDefaultUser()
+                                    printValues()
+                                    haptic(.success)
+                                }
                             
                             }
                         }
                         //1. come back to fix button!
-                    
                     }
                 }
         }
@@ -57,6 +61,13 @@ struct initialLaunchUserInput: View {
         UserDefaults.standard.set(phoneNumber, forKey: "userInfo")
         contactPermission()
         firstTimeUser = true
+    }
+    
+    func printValues() {
+        print("Firstname entered: " + firstName)
+        print("Lastname entered: " + lastName)
+        print("Email entered: " + emailAddress)
+        print("Phone Number entered: " + phoneNumber)
     }
     
     private func contactPermission(){

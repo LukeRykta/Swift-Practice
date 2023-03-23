@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
-            
+        NavigationView {
             List{
                 HStack {
                     Image(systemName: "globe")
@@ -26,15 +25,13 @@ struct ContentView: View {
                     }
                     
                 }
-                NavigationLink(destination: HapticView()){
-                    HStack{
+                ZStack{
+                    NavigationLink(destination: HapticView()){
                         Image(systemName: "bolt.fill")
-                        Text("Haptic Buttons")
+                        Text("Haptic")
                     }
-                    
                 }
             }
-            
         }
     }
 }
