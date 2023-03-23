@@ -17,7 +17,10 @@ struct BluetoothConnectivityView: View {
         VStack {
             VStack{
                 Text(messageText)
-                Button("Transfer Data to Nearby Watch", action: SendData)
+                Button("Transfer Data to Nearby Watch"){
+                    SendData()
+                    HapticManagerWatch.shared.playHaptic()
+                }
 //                Button("Transfer Data to Nearby Watch", action: SendData)
             }
             Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
