@@ -16,7 +16,7 @@ class BluetoothPeripheralModel: NSObject, ObservableObject {
 	
 	override init(){
 		super.init()
-		self.peripheralManager = CBPeripheralManager(delegate: delegate, queue: nil)
+		peripheralManager = CBPeripheralManager(delegate: delegate, queue: nil)
 	}
 	    /*
      *  Sends the next amount of data to the connected central
